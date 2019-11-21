@@ -1,3 +1,61 @@
+#navbar ul {
+    transition: 0.3s all ease;
+
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    left: -900px;
+}
+
+
+.open {
+    left: 0px !important;
+}
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    background: #fff;
+    margin: 6px 0;
+    height: 4px;
+    width: 36px;
+    border-radius: 2px;
+    position: relative;
+    transition: 0.3s;
+
+}
+
+.change.first-bar {
+    top: 11px;
+    transform: rotate(45deg);
+}
+
+
+.change.second-bar {
+    opacity: 0
+}
+
+
+.change.third-bar {
+    bottom: 9px;
+    transform: rotate(-45deg);
+}
+
+.menu-item {
+    transition: 0.3s all ease;
+    background: #333;
+}
+
 #navbar .logo {
     float: none;
     text-align: center;
@@ -15,17 +73,26 @@
 #navbar ul li a {
     padding: 5px;
     border-bottom: #444 dotted 3px;
-
 }
 
 /* Showcase */
 #showcase {
     height: 100%;
+    transition: 0.3s all ease;
+
+
 }
 
 #showcase .showcase-content {
     padding: 70px 0 30px 0;
+
 }
+
+.shift {
+    padding-top: 120px
+}
+
+
 
 /* Home Info */
 
@@ -36,7 +103,6 @@
 #home-info .info-content {
     float: none;
     width: 100%;
-
 }
 
 /* Boxes */
@@ -45,7 +111,16 @@
     width: 100%;
 }
 
+#testimonials .testimonial {
+    margin: 20px;
+}
+
 /* About */
+#about-info,
+#contact-form {
+    transition: 0.3s all ease;
+}
+
 #about-info .info-right,
 #about-info .info-left {
     float: none;
@@ -55,6 +130,10 @@
 
 #about-info .info-right img {
     display: none;
+}
+
+#contact-form {
+    margin-top: 70px;
 }
 
 #contact-info .box {
